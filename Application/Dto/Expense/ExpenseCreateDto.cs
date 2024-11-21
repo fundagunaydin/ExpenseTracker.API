@@ -1,4 +1,6 @@
-﻿namespace ExpenseTracker.API.Application.Dto.Expense
+﻿using System;
+
+namespace ExpenseTracker.API.Application.Dto.Expense
 {
     public class ExpenseCreateDto
     {
