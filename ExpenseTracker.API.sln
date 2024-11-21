@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35424.110 d17.12
+VisualStudioVersion = 17.12.35424.110
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenseTracker.API", "ExpenseTracker.API.csproj", "{FDD65223-6745-4BC9-8337-E70FAA2B54BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entity-framework-migrations", "Entity-framework-migrations", "{20162C5D-F6F5-4F25-A385-E6A09394DBF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenseTracker.MSSQL", "..\ExpenseTracker.MSSQL\ExpenseTracker.MSSQL.csproj", "{8D1FB7BA-9324-46EC-AA79-1541F53C7F3B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +19,15 @@ Global
 		{FDD65223-6745-4BC9-8337-E70FAA2B54BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDD65223-6745-4BC9-8337-E70FAA2B54BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDD65223-6745-4BC9-8337-E70FAA2B54BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D1FB7BA-9324-46EC-AA79-1541F53C7F3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D1FB7BA-9324-46EC-AA79-1541F53C7F3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D1FB7BA-9324-46EC-AA79-1541F53C7F3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D1FB7BA-9324-46EC-AA79-1541F53C7F3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8D1FB7BA-9324-46EC-AA79-1541F53C7F3B} = {20162C5D-F6F5-4F25-A385-E6A09394DBF2}
 	EndGlobalSection
 EndGlobal

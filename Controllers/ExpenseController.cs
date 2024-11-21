@@ -6,6 +6,7 @@ using ExpenseTracker.API.Application.Services.Expense;
 using ExpenseTracker.API.Application.Dto.Expense;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
+using System.Threading.Tasks;
 
 namespace ExpenseTracker.API.Controllers
 {
@@ -37,9 +38,9 @@ namespace ExpenseTracker.API.Controllers
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         public async Task<IActionResult> CreateExpense([Required][FromBody] ExpenseCreateDto expense)
         {
-            //var result = await _expenseService.AddAsync(expense);
+            var result = await _expenseService.AddAsync(expense);
 
-            return null;
+            return (IActionResult)Task.FromResult(result);
 
         }
 

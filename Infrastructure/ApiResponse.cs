@@ -1,4 +1,6 @@
-﻿namespace ExpenseTracker.API.Infrastructure
+﻿using System.Collections.Generic;
+
+namespace ExpenseTracker.API.Infrastructure
 {
     public class ApiResponse<T>
     {
